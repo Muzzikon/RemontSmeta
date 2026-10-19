@@ -1,0 +1,2 @@
+// Runs before the application stylesheet to avoid a light flash on startup.
+(()=>{let preference='dark';try{const saved=localStorage.getItem('remont_smeta_v1_theme');if(['light','dark','system'].includes(saved))preference=saved}catch{}const apply=()=>{document.documentElement.dataset.theme=preference==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):preference};apply();window.addEventListener('remontsmeta-theme',e=>{preference=e.detail;apply()});matchMedia('(prefers-color-scheme: dark)').addEventListener('change',apply)})();

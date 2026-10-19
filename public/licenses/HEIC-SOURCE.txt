@@ -1,0 +1,11 @@
+HEIC decoder: libheif-js 1.23.5 (unmodified WASM distribution).
+License: LGPL-3.0. See accompanying license texts.
+The application loads this decoder in a separate worker and does not modify it.
+
+Source and reproducible build scripts for this distribution:
+https://github.com/catdad-experiments/libheif-js/tree/v1.23.5
+https://www.npmjs.com/package/libheif-js/v/1.23.5
+Upstream libheif sources:
+https://github.com/strukturag/libheif
+
+The decoder is bundled locally. No photos are sent to these websites.
