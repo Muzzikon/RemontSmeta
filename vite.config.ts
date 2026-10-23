@@ -1,2 +1,5 @@
 import { defineConfig } from 'vite';
-export default defineConfig({server:{allowedHosts:['terminal.local']}});
+export default defineConfig({
+  base: '/RemontSmeta/',
+  server: { allowedHosts: ['terminal.local'] },
+});
